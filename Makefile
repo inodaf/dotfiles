@@ -75,9 +75,6 @@ git: brew
 npm: brew-packages
 	fnm install --lts
 
-ruby: brew
-	brew install ruby
-
 rust: brew
 	brew install rust
 
