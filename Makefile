@@ -84,9 +84,6 @@ brew-packages: brew
 cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile || true
 
-node-packages: npm
-	eval $$(fnm env); npm install -g $(shell cat install/npmfile)
-
 rust-packages: CARGO=$(HOMEBREW_PREFIX)/bin/cargo
 rust-packages: rust
 	$(CARGO) install $(shell cat install/Rustfile)
